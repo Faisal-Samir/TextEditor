@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test editor</title>
+    <!-- tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/17d2e8cf56.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-slate-200">
+    <header>
+        <nav>
+            <div class="navbar bg-neutral text-neutral-content">
+                <a class="btn btn-ghost normal-case text-xl">Test Editor</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="heading pt-10">
+            <h2 class="text-4xl text-center font-bold">Welcome to Text Editor</h2>
+        </section>
+        <section class="rounded-xl textEditor border w-full lg:w-2/4 bg-white lg:h-80 mx-auto mt-16">
+            <div class="grid grid-cols-3">
+                <div class="lg:ml-4">
+                    <button class=" ml-1 lg:ml-5 mt-3 font-bold text-lg " id="bold"><span id="boldB" class="px-2">B</span></button>
+                    <button class=" lg:ml-5 pt-3 font-bold text-lg" id="italic"><i id="italicI" class="px-2">I</i></button>
+                    <button class=" lg:ml-5 mt-3 font-bold text-lg" id="underline"><u id="underlineU" class="px-2">U</u></button>
+                </div>
+                <div class="mt-4 lg:ml-8">
+                    <button class="btn-align" id="leftAlign"><i id='left' class="fa-solid fa-align-left"></i></button>
+                    <button class="btn-align ml-1 lg:ml-5" id="centerAlign"><i id="center" class="fa-solid fa-align-center"></i></button>
+                    <button class="btn-align ml-2 lg:ml-5" id="rightAlign"><i id="right" class="fa-solid fa-align-right"></i></button>
+                    <button class="btn-align ml-2 lg:ml-5" id="justifyAlign"><i id="justify" class="fa-solid fa-align-justify"></i></button>
+                </div>
+                <div class="mt-3 lg:ml-16">
+                    <input type="number" id="fontSize" value="12" class="w-8 lg:w-3/12 pl-1 border-2">
+                    <button class="lg:ml-1 font-bold lg:px-2" id="upperCase">aA</button>
+                    <input type="color" name="color" id="colorPicker" class="lg:ml-5 p-1">
+                </div>
+            </div>
+            <textarea name="text" id="textEditor" class="border-2 mx-4 lg:ml-8 mt-3 rounded-lg pl-4 pt-2 w-11/12 h-32 lg:h-3/4 font-normal text-xs"></textarea>
+        </section>
+    </main>
+    <footer class="py-10">
+        <h2 class="text-center">All rights reserve by Samir Faisal</h2>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
